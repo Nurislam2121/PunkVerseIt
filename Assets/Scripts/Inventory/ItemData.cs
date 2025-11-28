@@ -1,0 +1,12 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "NewItem", menuName = "Inventory/Item")]
+public class ItemData : ScriptableObject
+{
+    public string itemId; // уникальный id (например "apple", "potion_small")
+    public string itemName;
+    public Sprite icon;
+    public bool stackable = true;
+    public int maxStack = 99;
+    [TextArea] public string description;
+}
